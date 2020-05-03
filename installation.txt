@@ -1,0 +1,15 @@
+pip install django
+
+# to see commands available from django
+django-admin    
+
+# creates django project with base files
+django-admin startproject django_project 
+
+# start server
+python manage.py runserver
+
+
+
+# create app inside django project
+python manage.py startapp blog
