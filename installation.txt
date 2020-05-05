@@ -18,3 +18,18 @@ python manage.py runserver
 
 # create app inside django project
 python manage.py startapp blog
+
+
+
+
+# create database (migrations)
+python manage.py makemigrations
+python manage.py migrate
+
+# create super user for admin
+python manage.py createsuperuser
+
+# view models -> table migrations
+python manage.py makemigrations
+# view sql syntax for migrations
+python manage.py sqlmigrate blog 0001
