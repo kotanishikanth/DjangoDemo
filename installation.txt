@@ -4,6 +4,9 @@ python -m venv
 python -m pip install --upgrade pip
 
 pip install django
+# pylint for django # pip install pylint-django
+
+pip install pillow # to work with images in python
 
 # to see commands available from django
 django-admin    
@@ -33,3 +36,8 @@ python manage.py createsuperuser
 python manage.py makemigrations
 # view sql syntax for migrations
 python manage.py sqlmigrate blog 0001
+
+# install crispy forms app
+pip install django-crispy-forms
+# add 'crispy_forms' into INSTALLED_APPS in django_project/settings.py
+# also add CRISPY_TEMPLATE_PACK = 'bootstrap4' at end of settings.py to configure css
